@@ -18,14 +18,20 @@ while count_nr <= len(cuvant):
         continue
     if user_letter in set_litere_deja_incercate:
         print("Litera deja incercata")
-    if user_letter in cuvant:
-        for iterator, value in enumerate(cuvant):
-            if cuvant[iterator] == user_letter:
-                cuvant_ascuns[iterator] = user_letter
-        print(" ".join(cuvant_ascuns))
     else:
-        count_nr += 1
-    set_litere_deja_incercate.add(user_letter)
-    if '_' not in cuvant_ascuns:
-        print("Ai castigat!")
-        break
+        if user_letter in cuvant:
+            for iterator, value in enumerate(cuvant):
+                if cuvant[iterator] == user_letter:
+                    cuvant_ascuns[iterator] = user_letter
+            print(" ".join(cuvant_ascuns))
+        else:
+            count_nr += 1
+        if '_' not in cuvant_ascuns:
+            print("Ai castigat")
+            break
+        elif count_nr > len(cuvant):
+            print(f"Ai pierdut! Cuvantul era {cuvant}")
+        set_litere_deja_incercate.add(user_letter)
+
+
+    # breakbreak

@@ -46,13 +46,25 @@
 # print(suma_nr_infinite(1, 2, 3, 4, 5, 6, 7))
 
 
-# def catalog(*args, **kwargs):
+# def catalog(param 1, *args, **kwargs):    #cand creezi framework-uri iti pui parametrii de care ai nevoie, apoi args si kwargs stiind ca pe viitor poate trebuie sa trimiti ceva prin functie
 #     print(type(kwargs))
 #     return args, kwargs
 #
-# # print(catalog(1, 7, nume="Ion", prenume="vasile", varsta="12"))
+# print(catalog(1, 7, nume="Ion", prenume="vasile", varsta="12"))
 
+# def suma(a, b):
+#     a = diferenta(a, b)
+#     return a + b
+#
+#
+# def diferenta(a, b):
+#     return a - b
+#
+#
+# print(suma(diferenta(1, 2), 2))
+# print(suma(1, 2))
 
+    # Operator ternar:
 # a, b = 10, 20
 # min = None
 # if a < b:
@@ -62,7 +74,7 @@
 # min = a if a < b else b #asta e echivalent cu ce am scris mai sus
 # print(min)
 
-
+    # List comprehension:
 # lista_produse = ["ciocolata", "suc", "paine", "mere", "apa"]
 # # lista_noua = []
 # # for x in lista_produse:
@@ -79,7 +91,7 @@
 
 
 # la input utilizatorul sa primeasca un mesaj daca CNP-ul e valid sau nu
-# la an luza zi: foloseste "import datetime"
+# la an luna zi: foloseste "import datetime"
 # datetime.datetime.strptime()
 
 # import datetime

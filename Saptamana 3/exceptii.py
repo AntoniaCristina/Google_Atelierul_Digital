@@ -7,5 +7,7 @@ except ValueError as e:
 except Exception as e:
     # print(e.__doc__)   #arata tipul de eroare
     print('A aparut o eroare', e)
+else:
+    print("nu exista exceptii intalnite")
 finally:
     print('se ruleaza oricum')
